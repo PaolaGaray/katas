@@ -35,12 +35,33 @@ const score = {
     "pissing about": 25,
 }
 
-function boredom(staff) {
-    let boredomLevel = 0;
-    for (let person in staff) {
-        boredomLevel += score[staff[person]];
-    }
-    if (boredomLevel <= 80) return 'kill me now'
-    else if (boredomLevel > 80 && boredomLevel < 100) return 'i can handle this'
-    else return 'party time!!'
-}
+
+//solution using reduce:
+
+const boredom = (staff) => {
+    let val = Object.keys(staff).reduce((acc, val) => acc + score[staff[val]], 0);
+      
+    if (val <= 80) return 'kill me now';
+    if (val > 100) return 'party time!!';
+    return 'i can handle this';
+  }
+
+//Test:
+boredom({ tim: 'accounts', jim: 'accounts',
+  randy: 'pissing about', sandy: 'finance', andy: 'change',
+  katie: 'IS', laura: 'IS', saajid: 'canteen', alex: 'pissing about',
+  john: 'retail', mr: 'pissing about' })
+
+
+  
+//Another basic solution:
+
+//   const boredom = (staff) => {
+//     let boredomLevel = 0;
+//     for (let person in staff) {
+//         boredomLevel += score[staff[person]];
+//     }
+//     if (boredomLevel <= 80) return 'kill me now'
+//     else if (boredomLevel > 80 && boredomLevel < 100) return 'i can handle this'
+//     else return 'party time!!'
+// }
