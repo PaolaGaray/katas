@@ -47,13 +47,9 @@ const boredom = (staff) => {
   }
 
 //Test:
-boredom({ tim: 'accounts', jim: 'accounts',
-  randy: 'pissing about', sandy: 'finance', andy: 'change',
-  katie: 'IS', laura: 'IS', saajid: 'canteen', alex: 'pissing about',
-  john: 'retail', mr: 'pissing about' })
+boredom({ tim: 'accounts', jim: 'accounts', randy: 'pissing about', sandy: 'finance', andy: 'change', katie: 'IS', laura: 'IS', saajid: 'canteen', alex: 'pissing about', john: 'retail', mr: 'pissing about' })
 
 
-  
 //Another basic solution:
 
 //   const boredom = (staff) => {
