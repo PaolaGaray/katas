@@ -26,7 +26,19 @@ const top3 = (products, amounts, prices) => {
       return product.name
     })
   }
-  
+
+
+
+//   //The same solution but with diferent format:
+
+//   const top3 = (products, amounts, prices) =>
+//   products
+//     .map((name, index) => ({ name, index, revenue: amounts[index] * prices[index] }))
+//     .sort((a, b) => b.revenue - a.revenue || a.index - b.index)
+//     .slice(0, 3)
+//     .map(product => product.name)
+
+
   
   //Test
   //top3(["Computer", "Cell Phones", "Vacuum Cleaner"], [3, 24, 8], [199, 299, 399])
