@@ -14,7 +14,6 @@ const accum = (str) => {
     }).join('-')
 }
 
-
 //Test
 accum("ZpglnRxqenU")
 //"Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
