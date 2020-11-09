@@ -35,4 +35,9 @@ const descendingOrder = (n) => {
   //Test Data
   descendingOrder(42145);
 
-  
+
+  //Other solutions
+
+//   const descendingOrder = (n) => {
+//     return Number(String(n).split('').sort().reverse().join(''))
+//   }
