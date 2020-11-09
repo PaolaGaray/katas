@@ -26,3 +26,10 @@ const findSmallestInt = (args) =>{
   findSmallestInt([34, 15, 88, 2]);
   
   //findSmallestInt([34, -345, -1, 100])
+
+
+  
+  // Other solutions
+  // const findSmallestInt = (args) =>{
+  //   return Math.min(...args)
+  // }
