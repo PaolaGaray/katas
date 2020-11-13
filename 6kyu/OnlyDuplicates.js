@@ -26,7 +26,7 @@ function onlyDuplicates(str) {
     }
     const filter = uniqueChars.join('');
     
-    //Iterate through the original str and filter tha characteres that are unique
+    //Iterate through the original str and filter the characteres that are unique
     const duplicates = []
     for(let char of str){
       if(!filter.includes(char)) {
