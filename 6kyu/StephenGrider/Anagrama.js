@@ -8,15 +8,14 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-const anagrams = (stringA, stringB)=> {
-    let stringAFormated = stringA.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
-    let stringBFormated = stringB.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
-    
-    if(stringAFormated == stringBFormated)
-      return true
-    else
-      return false
-  }
+const anagrams = (stringA, stringB) => {
+  return cleanString(stringA) === cleanString(stringB)
+}
+
+//Helper Function:
+    const cleanString = (str) => {
+      return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+    }
 
 
 anagrams('rail safety', 'fairy tales')

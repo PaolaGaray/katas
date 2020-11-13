@@ -40,11 +40,7 @@ const maxChar = (str) => {
     //create an object with number of repetitions of each char:
     const charMap = {};
     for (let char of str) {
-        if(!charMap[char]) {
-            charMap[char] = 1;
-        } else {
-            charMap[char]++
-        }
+        charMap[char] = charMap[char] + 1 || 1
     }
     //iterate through the object created and look for the max 
     let max = 0;
@@ -59,5 +55,7 @@ const maxChar = (str) => {
 
     return maxChar;
 }
+
+maxChar('abcccccccd')
 
 
