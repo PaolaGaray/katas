@@ -13,8 +13,10 @@ function onlyDuplicates(str) {
     //iterate through the str, creating a new object
     let strMap = {}
     for(let char of str) {
-      if(!strMap[char]) strMap[char] = 1;
-       else strMap[char]++
+      if(!strMap[char]) 
+        strMap[char] = 1;
+       else 
+        strMap[char]++
     }
     //iterate through the object created in order to identify characteres that are unique
     
