@@ -26,7 +26,7 @@ const duplicateCount = (text) =>{
         textMap[char]++
       }
     }
-    //iterate through the object created in order to get characteres that are duplicated
+    //iterate through the object created and get characteres that are duplicated
     let duplicates = 0;
     for(let char in textMap){
       if(textMap[char] > 1) duplicates++
