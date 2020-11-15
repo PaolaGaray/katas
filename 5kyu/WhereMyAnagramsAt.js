@@ -40,9 +40,8 @@ const anagrams = (word, words) => {
 //Another solutions:
 
 // function anagrams(word, words) {
-//     return words.filter(function (e) {
-//         return e.split('').sort().join('') === word.split('').sort().join('');
-//     })
+//   word = word.split('').sort().join('');
+//   return words.filter(function(v) {return word == v.split('').sort().join('');});
 // }
 
 
