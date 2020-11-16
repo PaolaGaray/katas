@@ -23,9 +23,3 @@ const capitalize = (str) => {
 
 capitalize('look, it is working!') 
 //'Look, It Is Working!'
-
-
-
-
-//Another solutions:
-
