@@ -29,7 +29,6 @@ vowels('Hi ThEre!')
 
 
 
-
 //Another Solution:
 // const vowels = (str) => {
 //     let matches = str.match(/[aeiou]/gi);
